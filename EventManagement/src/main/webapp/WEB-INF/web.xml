@@ -1,0 +1,91 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+
+	<display-name>Archetype Created Web Application</display-name>
+	
+	<filter>
+		<filter-name>filter1</filter-name>
+		<display-name>filter1</display-name>
+		<description></description>
+		<filter-class>com.filter.filter1</filter-class>
+	</filter>
+	
+	<filter-mapping>
+		<filter-name>filter1</filter-name>
+		<url-pattern>/LoginServlet</url-pattern>
+	</filter-mapping>
+	<servlet>
+		<servlet-name>RegistrationServlet</servlet-name>
+		<display-name>RegistrationServlet</display-name>
+		<description></description>
+		<servlet-class>com.servlets.RegistrationServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<display-name>LoginServlet</display-name>
+		<description></description>
+		<servlet-class>com.servlets.LoginServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>EventServlet</servlet-name>
+		<display-name>EventServlet</display-name>
+		<description></description>
+		<servlet-class>com.servlets.EventServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>ShowEventServlet</servlet-name>
+		<display-name>ShowEventServlet</display-name>
+		<description></description>
+		<servlet-class>com.servlets.ShowEventServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>CartServlet</servlet-name>
+		<display-name>CartServlet</display-name>
+		<description></description>
+		<servlet-class>com.servlets.CartServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>OrderServlet</servlet-name>
+		<display-name>OrderServlet</display-name>
+		<description></description>
+		<servlet-class>com.servlets.OrderServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>DeleteFromCart</servlet-name>
+		<display-name>DeleteFromCart</display-name>
+		<description></description>
+		<servlet-class>com.servlets.DeleteFromCart</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>RegistrationServlet</servlet-name>
+		<url-pattern>/RegistrationServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/LoginServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>EventServlet</servlet-name>
+		<url-pattern>/EventServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ShowEventServlet</servlet-name>
+		<url-pattern>/ShowEventtServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>CartServlet</servlet-name>
+		<url-pattern>/CartServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>OrderServlet</servlet-name>
+		<url-pattern>/OrderServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>DeleteFromCart</servlet-name>
+		<url-pattern>/DeleteFromCart</url-pattern>
+	</servlet-mapping>
+</web-app>
